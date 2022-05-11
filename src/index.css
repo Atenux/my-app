@@ -16,10 +16,17 @@ body {
   .status {
     margin-bottom: 10px;
   }
+
+  .botones{
+    background-color: aqua;
+    color: darkred;
+    border: 2px solid red;
+  }
   
   .square {
-    background: #fff;
-    border: 1px solid #999;
+    background: rgb(255, 159, 159);
+    border: 2px solid #999;
+    border-radius: 5px;
     float: left;
     font-size: 24px;
     font-weight: bold;

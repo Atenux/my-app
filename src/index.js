@@ -90,8 +90,8 @@ function Square(props) {
   
       const moves = history.map((step, move) => {
         const desc = move ?
-          'Go to move #' + move :
-          'Go to game start';
+          'Ir a movimiento #' + move :
+          'ir al inicio del juego';
         return (
           <li key={move}>
             <button class="botones" onClick={() => this.jumpTo(move)}>{desc}</button>
@@ -101,9 +101,9 @@ function Square(props) {
   
       let status;
       if (winner) {
-        status = "Winner: " + winner;
+        status = "Ganador: " + winner;
       } else {
-        status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+        status = "Siguiente jugador: " + (this.state.xIsNext ? "X" : "O");
       }
   
       return (
@@ -117,6 +117,7 @@ function Square(props) {
           <div className="game-info">
             <div>{status}</div>
             <ol>{moves}</ol>
+            <div>Holi soy el mati</div>
           </div>
         </div>
       );
